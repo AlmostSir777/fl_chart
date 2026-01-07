@@ -420,6 +420,7 @@ class _CustomInteractiveViewerState extends State<CustomInteractiveViewer>
       ..translate(
         alignedTranslation.dx,
         alignedTranslation.dy,
+        0,
       );
 
     // Transform the viewport to determine where its four corners will be after
@@ -529,7 +530,8 @@ class _CustomInteractiveViewerState extends State<CustomInteractiveViewer>
       widget.maxScale,
     );
     final clampedScale = clampedTotalScale / currentScale;
-    return matrix.clone()..scale(clampedScale, clampedScale, clampedScale);
+    return matrix.clone()
+      ..scale(clampedScale, clampedScale, clampedScale);
   }
 
   // Returns true iff the given _GestureType is enabled.

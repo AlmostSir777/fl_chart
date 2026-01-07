@@ -693,8 +693,7 @@ class BarChartPainter extends AxisChartPainter<BarChartData> {
     Size drawSize,
     PaintHolder<BarChartData> holder,
   ) {
-    if (stackItem.borderSide.width == 0 ||
-        stackItem.borderSide.color.opacity == 0) {
+    if (stackItem.borderSide.width == 0 || stackItem.borderSide.color.a == 0) {
       return;
     }
     RRect strokeBarRect;

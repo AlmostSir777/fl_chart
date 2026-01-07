@@ -105,18 +105,12 @@ class _CandlestickChartState extends AnimatedWidgetBaseState<CandlestickChart> {
                   AxisLinesIndicatorPainter(
                     horizontalLineProvider: (y) => HorizontalLine(
                       y: y,
-                      color: Theme.of(context)
-                          .colorScheme
-                          .outline
-                          .withOpacity(0.5),
+                      color: Theme.of(context).colorScheme.outline.withOpacity(0.5),
                       strokeWidth: 1,
                     ),
                     verticalLineProvider: (x) => VerticalLine(
                       x: x,
-                      color: Theme.of(context)
-                          .colorScheme
-                          .outline
-                          .withOpacity(0.5),
+                      color: Theme.of(context).colorScheme.outline.withOpacity(0.5),
                       strokeWidth: 1,
                     ),
                   ),

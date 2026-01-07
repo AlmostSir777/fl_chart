@@ -420,6 +420,7 @@ class _CustomInteractiveViewerState extends State<CustomInteractiveViewer>
       ..translate(
         alignedTranslation.dx,
         alignedTranslation.dy,
+        0,
       );
 
     // Transform the viewport to determine where its four corners will be after

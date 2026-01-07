@@ -873,7 +873,7 @@ class DefaultCandlestickPainter extends FlCandlestickPainter {
       xOffsetInCanvas + style.bodyWidth / 2,
       bodyLowCanvas,
     );
-    if (style.bodyFillColor.opacity > 0 && style.bodyWidth > 0) {
+    if (style.bodyFillColor.a > 0 && style.bodyWidth > 0) {
       canvas.drawRRect(
         RRect.fromRectAndRadius(
           bodyRect,
@@ -884,7 +884,7 @@ class DefaultCandlestickPainter extends FlCandlestickPainter {
           ..style = PaintingStyle.fill,
       );
     }
-    if (style.bodyStrokeWidth > 0 && style.bodyStrokeColor.opacity > 0) {
+    if (style.bodyStrokeWidth > 0 && style.bodyStrokeColor.a > 0) {
       canvas.drawRRect(
         RRect.fromRectAndRadius(
           bodyRect,
